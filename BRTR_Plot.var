@@ -1,0 +1,23 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Library: BRTR_Plot
+ * File: BRTR_Plot.var
+ * Author: abdullahoglf
+ * Created: May 27, 2015
+ ********************************************************************
+ * Constants of library BRTR_Plot
+ ********************************************************************)
+VAR CONSTANT
+	BRTR_DEG_2_RAD : REAL := 0.01745;
+	BRTR_RAD_2_DEG : REAL := 57.29578;
+	BRTR_MAX_NO_ENTRIES : UDINT := 3000; (*Max number of entries that should be inside the Plot Buffer*)
+	BRTR_WAR_LIMIT_VIOLATION : UINT := 40000; (*A given line is outside the drawing window; the higher control will ignore this line when this is returned by BRTR_CalculatePoints*)
+	BRTR_WAR_FILE_XL : UINT := 40001; (*ncFILE_XL mode was specified for the CNC start mode; decoding has come to a point in the file but it still is not finsihed*)
+	BRTR_ERR_NULL_POINTER : UINT := 52001; (*Null pointer*)
+	BRTR_ERR_NOT_ENOUGH_MEM : UINT := 52002; (*Not enough memory for all buffer -> increase BRTR_MAX_NO_ENTRIES*)
+	BRTR_ERR_WRONG_POINT_CALC : UINT := 52003; (*Recorded by BRTR_CalculatePoints -> means that at least one of the final points from which the drawing will be created has a negative coordinate value*)
+	BRTR_AUTO_BUFFER : USINT := 30;
+	BRTR_AUTO_BUFFER_MIN_1 : USINT := BRTR_AUTO_BUFFER-1;
+END_VAR
+(**)

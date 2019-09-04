@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.8.58 SP?>
+<Library Version="2.22.0" Description="This library provides functions to plot the results of a GCode" xmlns="http://br-automation.co.at/AS/Library">
+  <Objects>
+    <Object Type="Package">Documentation</Object>
+    <Object Type="File" Description="Exported data types">BRTR_Plot.typ</Object>
+    <Object Type="File" Description="Exported constants">BRTR_Plot.var</Object>
+    <Object Type="File" Description="Exported functions and function blocks">BRTR_PlotX.fun</Object>
+    <Object Type="File">BRTR_Global.h</Object>
+    <Object Type="Package" Description="VC Component Init">Init</Object>
+    <Object Type="Package" Description="Drawing related FBs">Draw</Object>
+    <Object Type="Package">DeInit</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="Runtime" />
+    <Dependency ObjectName="Operator" />
+    <Dependency ObjectName="standard" />
+    <Dependency ObjectName="visapi" />
+    <Dependency ObjectName="DataObj" />
+    <Dependency ObjectName="AsMem" />
+    <Dependency ObjectName="AsBrMath" />
+    <Dependency ObjectName="asstring" />
+  </Dependencies>
+</Library>
